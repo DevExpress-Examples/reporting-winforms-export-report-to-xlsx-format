@@ -1,13 +1,7 @@
-<!-- default file list -->
-*Files to look at*:
+﻿Files to look at:
 
-* [Form1.cs](./CS/ExportToXLSX/Form1.cs) (VB: [Form1.vb](./VB/ExportToXLSX/Form1.vb))
-<!-- default file list end -->
-# How to export a report to XLSX format
+* [Form1.cs](https://github.com/DevExpress-Examples/Reporting_how-to-export-a-report-to-xlsx-format-e1539/blob/2020.2/CS/Form1.cs) ([Form1.vb](https://github.com/DevExpress-Examples/Reporting_how-to-export-a-report-to-xlsx-format-e1539/blob/2020.2/VB/Form1.vb))
 
+# Export a Report to The XLSX Format
 
-<p>The following example demonstrates how to export a report to XLSX format. To do this, the <strong>XtraReport.ExportToXlsx</strong> method should be used. It also demonstrates what specific <strong>XlsxExportOptions</strong> may be used when a report is exported to XLSX.</p>
-
-<br/>
-
-
+The example in this repository demonstrates how to export a report to the XLSX format. Refer to the following article for more information: [Export to XLSX](https://docs.devexpress.com/XtraReports/6284).
