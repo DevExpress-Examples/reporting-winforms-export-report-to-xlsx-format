@@ -23,22 +23,32 @@
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
+			Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
 			Me.SuspendLayout()
-			' 
-			' Form1
-			' 
-			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+			'
+			'SimpleButton1
+			'
+			Me.SimpleButton1.Location = New System.Drawing.Point(65, 42)
+			Me.SimpleButton1.Name = "SimpleButton1"
+			Me.SimpleButton1.Size = New System.Drawing.Size(207, 46)
+			Me.SimpleButton1.TabIndex = 0
+			Me.SimpleButton1.Text = "Create a Report and Export to XLSX"
+			'
+			'Form1
+			'
+			Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(800, 450)
+			Me.ClientSize = New System.Drawing.Size(336, 130)
+			Me.Controls.Add(Me.SimpleButton1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
 			Me.ResumeLayout(False)
 
 		End Sub
 
-		#End Region
+		Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
+
+#End Region
 	End Class
 End Namespace
 

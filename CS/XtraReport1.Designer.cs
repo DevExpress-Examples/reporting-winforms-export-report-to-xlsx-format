@@ -46,7 +46,7 @@
             this.TopMargin,
             this.BottomMargin,
             this.Detail});
-            this.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Version = "20.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

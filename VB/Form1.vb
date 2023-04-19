@@ -11,18 +11,14 @@ Namespace XlsxExportExample
 			InitializeComponent()
 		End Sub
 
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+		Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
 			' Create a report.
-			Dim report As New XtraReport() With {
-				.Name = "Report Example",
-				.Bands = {
-					New DetailBand() With {
-						.Controls = {
-							New XRLabel() With {.Text = "Some content goes here..."}
-						}
-					}
-				}
-			}
+			Dim label As New XRLabel() With {.Text = "Some content goes here..."}
+			Dim band As New DetailBand()
+			band.Controls.Add(label)
+			Dim report As New XtraReport() With {.Name = "Report Example"}
+			report.Bands.Add(band)
+
 
 			' Specify export options.
 			Dim xlsxExportOptions As New XlsxExportOptions() With {
@@ -32,10 +28,11 @@ Namespace XlsxExportExample
 			}
 
 			' Specify the path for the exported XLSX file.  
-			Dim xlsxExportFile As String = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) & "\Downloads\" & report.Name & ".xlsx"
+			Dim xlsxExportFileName As String = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) & "\Downloads\" & report.Name & ".xlsx"
 
 			' Export the report.
-			report.ExportToXlsx(xlsxExportFile, xlsxExportOptions)
+			report.ExportToXlsx(xlsxExportFileName, xlsxExportOptions)
+			System.Diagnostics.Process.Start(xlsxExportFileName)
 		End Sub
 	End Class
 End Namespace

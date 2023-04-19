@@ -43,7 +43,7 @@
 			' XtraReport1
 			' 
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.TopMargin, Me.BottomMargin, Me.Detail})
-			Me.Font = New System.Drawing.Font("Arial", 9.75F)
+			Me.Font = New DevExpress.Drawing.DXFont("Arial", 9.75F)
 			Me.Version = "20.2"
 			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 

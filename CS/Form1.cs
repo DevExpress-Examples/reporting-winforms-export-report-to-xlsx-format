@@ -9,7 +9,7 @@ namespace XlsxExportExample {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        private void simpleButton1_Click(object sender, EventArgs e) {
             // Create a report.
             XtraReport report = new XtraReport() {
                 Name = "Report Example",
@@ -32,14 +32,15 @@ namespace XlsxExportExample {
             };
 
             // Specify the path for the exported XLSX file.  
-            string xlsxExportFile =
+            string xlsxExportFileName =
                 Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) +
                 @"\Downloads\" +
                 report.Name +
                 ".xlsx";
 
             // Export the report.
-            report.ExportToXlsx(xlsxExportFile, xlsxExportOptions);
+            report.ExportToXlsx(xlsxExportFileName, xlsxExportOptions);
+            System.Diagnostics.Process.Start(xlsxExportFileName);
         }
     }
 }
