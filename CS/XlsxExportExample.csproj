@@ -139,7 +139,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Readme.md" />
-    <None Include="sync.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
