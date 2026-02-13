@@ -22,7 +22,7 @@ The code in this repository shows how to export a report to XLSX format.
 * [How to export reports to different sheets in an XLSX file by using Spreadsheet Document Server](https://github.com/DevExpress-Examples/Reporting_how-to-export-reports-to-different-sheets-in-an-xlsx-file-by-using-spreadsheet-e4892)
 * [How to: Bind a Report to an Excel Workbook at runtime](https://github.com/DevExpress-Examples/Reporting_how-to-bind-a-report-to-an-excel-workbook-at-runtime-t311954)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-export-report-to-xlsx-format&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-export-report-to-xlsx-format&~~~was_helpful=no)
 
